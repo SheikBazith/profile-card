@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      background-color: hsl(185, 75%, 39%);
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Kumbh Sans',sans-serif;
+    }
+
+    .card{
+      background-color: white;
+      border-radius: 15px;
+      position: relative;
+      z-index: 1;
+    }
+
+    img{
+      border-radius: 15px 15px 0 0;
+    }
+    .profile{
+      text-align: center;
+      margin-top: 80px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .profile em{
+      color: hsl(227, 10%, 46%);
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    .profile p{
+      color: hsl(227, 10%, 46%);
+      font-weight: 500;
+      font-size: 14px;
+      margin-top: 7px;
+      margin-bottom: 30px;
+    }
+    .stats{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    .stats span{
+      color: hsl(229, 23%, 23%);
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .stats p{
+      color: hsl(227, 10%, 46%);
+      font-size: 10px;
+      letter-spacing: 2px;
+      margin-top: 5px;
+    }
+    .header{
+      position: relative; 
+    }
+    .pfp{
+      position: absolute;
+      border-radius: 50%;
+      left: 125px;
+      top: 90px;
+      border: 5px solid white;
+    }
+
+    
+  </style>
+</head>
+<body>
+    <section class="card">
+    <img class="header" src="images/bg-pattern-card.svg">
+    <img class="pfp" src="images/image-victor.jpg">
+    <div class="profile">
+      <span>Victor Crest <em>26</em></span>
+      <p>London </p>   
+    </div>
+    <hr>
+    <div class="stats">
+      <section>      
+        <span>80K</span>
+        <p>Followers</p>
+      </section>
+
+    <section>
+      <span>803K</span>
+      <p>Likes</p>
+    </section>
+      
+    <section>
+      <span>1.4K</span>
+      <p>Photos</p>
+    </section>
+
+    </div>
+  </section>
+
+
+</body>
+</html>
